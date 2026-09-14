@@ -72,7 +72,7 @@ $$
 The covariance between the two assets is therefore
 
 $$
-\operatorname{Cov}(A,T) = \rho \sigma_A \sigma_T
+\mathrm{Cov}(A,T) = \rho \sigma_A \sigma_T
 $$
 
 Historical observations are generated from this distribution and stored in a
@@ -324,8 +324,9 @@ $$
 the Monte Carlo estimate of expected P&L is
 
 $$
-\hat{\mu}_N = \frac{1}{N}\sum_{i=1}^{N} X_i
+\hat{\mu}_N = \frac{1}{N}\sum_{i=1}^{N}X_i
 $$
+
 For parameter sweeps, approximate 95% confidence intervals are calculated as
 
 $$
@@ -411,9 +412,7 @@ Introducing a small positive skew reduces this to roughly $84$ contracts.
 As the skew parameter is increased further, exposure continues to decline,
 reaching approximately $77–78$ contracts at
 
-$
-\lambda = 0.003.
-$
+$\lambda = 0.003$
 
 This demonstrates the intended risk-management effect of the reservation-price
 adjustment:
@@ -439,10 +438,7 @@ sacrificing simulated profitability.
 The running Monte Carlo estimate is
 
 $$
-\hat\mu_n
-=
-\frac{1}{n}
-\sum_{i=1}^{n}X_i.
+\hat\mu_n = \frac{1}{n}\sum_{i=1}^{n}X_i
 $$
 
 Initially the estimate is highly unstable because it depends on only a small
@@ -577,7 +573,7 @@ made deliberately.
   the worst-case settlement contribution
 
   $$
-  \min(I_i,0),
+  \min(I_i,0)
   $$
 
   and sums these across positions. Because different options depend on the same
