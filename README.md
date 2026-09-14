@@ -72,9 +72,7 @@ $$
 The covariance between the two assets is therefore
 
 $$
-\operatorname{Cov}(A,T)
-=
-\rho\sigma_A\sigma_T.
+\operatorname{Cov}(A,T) = \rho \sigma_A \sigma_T
 $$
 
 Historical observations are generated from this distribution and stored in a
@@ -112,17 +110,13 @@ $$
 the theoretical price is
 
 $$
-V
-=
-P(A>K)
-=
-1-\Phi
-\left(
+V = P(A>K) =
+1-\Phi\left(
 \frac{K-\mu_A}{\sigma_A}
-\right),
+\right)
 $$
 
-where $(\Phi)$ is the standard normal CDF.
+where $\Phi$ is the standard normal CDF.
 
 The same calculation is used for Theriodic strike options.
 
@@ -161,16 +155,10 @@ $$
 Therefore,
 
 $$
-P(A>T)
-=
-P(D>0)
-=
-1-
-\Phi
-\left(
+P(A>T) = P(D>0) = 1-\Phi\left(
 \frac{-(\mu_A-\mu_T)}
 {\sigma_D}
-\right).
+\right)
 $$
 
 ---
@@ -184,9 +172,7 @@ The market maker first calculates the theoretical fair value $V$.
 It then adjusts this value according to its current inventory:
 
 $$
-R
-=
-V-\lambda I,
+R = V - \lambda I,
 $$
 
 where
@@ -296,10 +282,7 @@ or if it would violate the per-option position limit.
 The simulator also records **daily peak gross inventory**
 
 $$
-G_{\max}
-=
-\max_t
-\sum_i |I_i(t)|,
+G_{\max} = \max_t \sum_i |I_i(t)|
 $$
 
 which is used as a measure of inventory exposure.
@@ -341,9 +324,7 @@ $$
 the Monte Carlo estimate of expected P&L is
 
 $$
-\hat{\mu}_N
-=
-\frac{1}{N}\sum_{i=1}^{N} X_i
+\hat{\mu}_N = \frac{1}{N}\sum_{i=1}^{N} X_i
 $$
 For parameter sweeps, approximate 95% confidence intervals are calculated as
 
