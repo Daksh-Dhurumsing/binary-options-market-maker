@@ -341,12 +341,10 @@ $$
 the Monte Carlo estimate of expected P&L is
 
 $$
-\hat\mu_N
+\hat{\mu}_N
 =
-\frac{1}{N}
-\sum_{i=1}^{N}X_i.
+\frac{1}{N}\sum_{i=1}^{N} X_i
 $$
-
 For parameter sweeps, approximate 95% confidence intervals are calculated as
 
 $$
